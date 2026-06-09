@@ -1,0 +1,152 @@
+#workskin .postcard,
+#workskin .postcard * {
+  box-sizing: border-box;
+}
+
+#workskin .postcard {
+  position: relative;
+  width: 94%;
+  max-width: 620px;
+  margin: 45px auto 95px;
+  font-family: "Trebuchet MS", sans-serif;
+  overflow: visible;
+}
+
+#workskin .postcard p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#workskin .postcard-inner {
+  position: relative;
+  width: 100%;
+}
+
+#workskin .postcard-front {
+  position: relative;
+  width: 100%;
+  z-index: 6;
+  background: #eee;
+  border: 1px solid rgba(0,0,0,0.18);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  overflow: hidden;
+  transition: 1s ease;
+  line-height: 0;
+}
+
+#workskin .postcard-front img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#workskin .postcard:hover .postcard-front {
+  left: -20px;
+  top: -22px;
+  transform: rotate(-5deg);
+  z-index: 1;
+  opacity: 0.18;
+}
+
+#workskin .postcard-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f7f1df;
+  color: #3b3027;
+  border: 1px solid rgba(0,0,0,0.18);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  z-index: 3;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+#workskin .postcard-back:before {
+  content: "";
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  left: 50%;
+  width: 1px;
+  background: rgba(0,0,0,0.22);
+}
+
+#workskin .postcard-message {
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  width: 38%;
+  height: 82%;
+  font-size: 0.78em;
+  line-height: 1.35;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+#workskin .postcard-message p {
+  margin: 0 0 0.85em 0 !important;
+}
+
+#workskin .postcard-address {
+  position: absolute;
+  top: 36%;
+  right: 5%;
+  width: 40%;
+  text-align: center;
+  font-size: 0.58em;
+  line-height: 1.45;
+  font-weight: 600;
+  z-index: 2;
+}
+
+#workskin .postcard-address p {
+  margin: 0 0 0.45em 0 !important;
+}
+
+#workskin .postcard-stamp {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  width: 13%;
+  max-width: 64px;
+  z-index: 4;
+}
+
+#workskin .postcard-stamp img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#workskin .postcard-postmark {
+  position: absolute;
+  top: 12%;
+  right: 25%;
+  font-family: Georgia, serif;
+  font-size: 0.32em;
+  line-height: 1;
+  color: rgba(90,90,90,0.25);
+  transform: rotate(-8deg);
+}
+
+#workskin .postcard-postmark p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#workskin .postcard-sticker-bottom {
+  position: absolute;
+  left: 70px;
+  bottom: 1px;
+  width: 95px;
+  opacity: 1;
+  z-index: 2;
+}
+
+#workskin .postcard-sticker-bottom img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
