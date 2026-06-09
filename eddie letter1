@@ -1,0 +1,179 @@
+#workskin .eddie-letter-1,
+#workskin .eddie-letter-1 * {
+  box-sizing: border-box;
+}
+
+#workskin .eddie-letter-1 p {
+  margin: 0 0 0.8em 0 !important;
+  padding: 0 !important;
+}
+
+#workskin .eddie-letter-1 {
+  position: relative;
+  width: 94%;
+  max-width: 620px;
+  height: 260px;
+  margin: 0 auto 120px;
+  overflow: hidden;
+  font-family: Georgia, serif;
+  transition: height 1s ease;
+}
+
+#workskin .eddie-letter-1:hover {
+  height: 1580px;
+  overflow: visible;
+}
+
+#workskin .eddie-letter-1-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 260px;
+  background: #c4a07a;
+  color: #2a1a0a;
+  border: 1px solid rgba(0,0,0,0.18);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  z-index: 8;
+  transition: 1s ease;
+}
+
+#workskin .eddie-letter-1:hover .eddie-letter-1-cover {
+  top: -65px;
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+
+#workskin .eddie-letter-1-from {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+#workskin .eddie-letter-1-to {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  width: 230px;
+  margin-left: -115px;
+  margin-top: -30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+#workskin .eddie-letter-1-stamp {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 54px;
+}
+
+#workskin .eddie-letter-1-stamp img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#workskin .eddie-letter-1-postmark {
+  position: absolute;
+  top: 70px;
+  right: 55px;
+  width: 78px;
+  height: 78px;
+  border: 1px solid rgba(70,70,70,0.35);
+  border-radius: 50%;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 0.52em;
+  line-height: 1.15;
+  color: rgba(70,70,70,0.60);
+  padding-top: 16px;
+  transform: rotate(7deg);
+  z-index: 3;
+}
+
+#workskin .eddie-letter-1-postmark p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#workskin .eddie-letter-1-paper {
+  position: absolute;
+  top: 245px;
+  left: 3%;
+  width: 94%;
+  background: #fff9e8;
+  color: #1c1308;
+  padding: 30px 24px 36px 34px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 7px 22px rgba(0,0,0,0.18);
+  line-height: 1.45;
+  font-size: 0.68em;
+  z-index: 4;
+  transition: top 1s ease, transform 1s ease;
+}
+
+#workskin .eddie-letter-1:hover .eddie-letter-1-paper {
+  top: 155px;
+  transform: rotate(0.4deg);
+}
+
+#workskin .eddie-letter-1-paper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 22px;
+  width: 1px;
+  background: rgba(190,45,45,0.22);
+}
+
+#workskin .eddie-letter-1-paper:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 33%;
+  height: 1px;
+  background: rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+#workskin .eddie-doodle-1 {
+  float: right;
+  width: 75px;
+  margin: 0 0 0 18px;
+  transform: rotate(6deg);
+}
+
+#workskin .eddie-doodle-1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+#workskin .eddie-doodle-2 {
+  position: absolute;
+  left: 45px;
+  bottom: -15px;
+  width: 180px;
+  opacity: 1;
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+#workskin .eddie-doodle-2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#workskin .letter-ps {
+  font-style: italic;
+  opacity: 0.85;
+}
